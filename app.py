@@ -35,9 +35,9 @@ oldpeak = st.slider(
     help="Look at your Exercise Stress Test report. Find the value labeled 'ST depression' or 'ST segment difference' relative to rest. It is usually a small number like 0.5 or 1.5."
 )
 st_slope_options = {
-    "Up": "Upsloping (Better)",
-    "Flat": "Flat (Neutral)",
-    "Down": "Downsloping (Riskier)"
+    "Up": "Upsloping",
+    "Flat": "Flat",
+    "Down": "Downsloping"
 }
 st_slope = st.selectbox(
     "ST Slope",
