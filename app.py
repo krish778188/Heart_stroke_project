@@ -18,7 +18,7 @@ fbs_options = {
     0: "No",
     1: "Yes"
 }
-fasting_blood_sugar = st.selectbox(
+fasting_bs = st.selectbox(
     "Fasting Blood Sugar > 120 mg/dL",
     options=[0, 1],
     format_func=lambda x: fbs_options[x]
