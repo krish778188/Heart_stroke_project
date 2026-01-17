@@ -14,12 +14,13 @@ sex = st. selectbox("SEX", ["M", "F"])
 chest_pain = st.selectbox("Chest Pain Type", ["Atypical Angina", "Non-Anginal Pain", "Typical Angina", "Asymptomatic"])
 resting_bp = st. number_input("Resting Blood Pressure (mm Hg)",80, 200, 100)
 cholesterol = st.number_input ("Cholesterol (mg/dL)", 100, 600, value=None)
-if cholesterol < 200:
-    st.markdown("🟢 :green[**Normal**]")
-elif 200 <= cholesterol < 240:
-    st.markdown("🟠 :orange[**Borderline**]")
-else:
-    st.markdown("🔴 :red[**High Risk**]")
+if cholesterol is not None:
+    if cholesterol < 200:
+        st.markdown("🟢 :green[**Normal**]")
+    elif 200 <= cholesterol < 240:
+        st.markdown("🟠 :orange[**Borderline**]")
+    else:
+        st.markdown("🔴 :red[**High Risk**]")
 fbs_options = {
     0: "No",
     1: "Yes"
