@@ -13,7 +13,7 @@ age = st.slider("Age", 18, 100, 40)
 sex = st. selectbox("SEX", ["M", "F"])
 chest_pain = st.selectbox("Chest Pain Type", ["Atypical Angina", "Non-Anginal Pain", "Typical Angina", "Asymptomatic"])
 resting_bp = st. number_input("Resting Blood Pressure (mm Hg)",80, 200, 100)
-cholesterol = st.number_input ("Cholesterol (mg/dL)", 100, 600)
+cholesterol = st.number_input ("Cholesterol (mg/dL)", 100, 600, value=None)
 if cholesterol < 200:
     st.markdown("🟢 :green[**Normal**]")
 elif 200 <= cholesterol < 240:
