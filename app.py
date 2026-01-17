@@ -11,7 +11,7 @@ st.markdown("Enter The Following Details")
 
 age = st.slider("Age", 18, 100, 40)
 sex = st. selectbox("SEX", ["M", "F"])
-chest_pain = st.selectbox("Chest Pain Type", ["Atypical Angina", "Non-Anginal Pain", "Typical Angina", "Asymptomatic"])
+chest_pain = st.selectbox("Chest Pain Type", ["Atypical Angina (ATA)", "Non-Anginal Pain (NAP)", "Typical Angina (TA)", "Asymptomatic (ASY)"])
 resting_bp = st. number_input("Resting Blood Pressure (mm Hg)",80, 200, 100)
 cholesterol = st.number_input ("Cholesterol (mg/dL)", 100, 600, 200)
 fbs_options = {
